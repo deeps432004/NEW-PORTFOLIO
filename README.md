@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Deepika H. Neeralagi — Personal Developer Portfolio
 
-## Getting Started
+> **"I build things that make technology feel useful."**
 
-First, run the development server:
+A dark, futuristic, cinematic personal portfolio built with **Next.js 16 (App Router)**, **React 19**, **TypeScript**, and **Tailwind CSS v4**.
+
+---
+
+## ⚡ Tech Stack
+
+- **Framework:** Next.js 16 (Turbopack, App Router)
+- **Language:** TypeScript 5
+- **Styling:** Tailwind CSS v4 & custom glassmorphism design system
+- **Motion:** Framer Motion
+- **Icons:** Lucide React
+- **Email Gateway:** Next.js Route (`/api/contact`) + FormSubmit API
+
+---
+
+## 🚀 Running Locally
 
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the live site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌐 Deploying to Vercel
 
-## Learn More
+### Method 1: GitHub + Vercel Dashboard (Recommended)
 
-To learn more about Next.js, take a look at the following resources:
+1. **Create a new repository on GitHub:**
+   - Go to [https://github.com/new](https://github.com/new).
+   - Set repository name as `portfolio` (or your preferred name).
+   - Click **Create repository** (do not add a README or .gitignore since we already have them).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Push the code to GitHub:**
+   In your terminal in this project folder, run:
+   ```bash
+   git branch -M main
+   git remote add origin https://github.com/deeps432004/portfolio.git
+   git push -u origin main
+   ```
+   *(Replace `portfolio` with your repo name if different)*
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Deploy on Vercel:**
+   - Visit [vercel.com](https://vercel.com) and log in with your GitHub account (`deeps432004`).
+   - Click **"Add New..."** ➔ **"Project"**.
+   - Find your `portfolio` repository and click **"Import"**.
+   - Keep the default settings (Framework: Next.js) and click **"Deploy"**.
+   - In ~30 seconds, Vercel will give you a live production URL!
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Method 2: Deploying via Vercel CLI
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+You can also deploy directly from your command line:
+
+```bash
+# Login and deploy preview
+npx vercel
+
+# Deploy directly to production
+npx vercel --prod
+```
+
+Follow the interactive prompts to link your Vercel account.
