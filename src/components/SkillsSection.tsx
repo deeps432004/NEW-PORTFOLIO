@@ -26,9 +26,6 @@ const skillCategories: SkillCategory[] = [
     accent: "text-cyan-400 border-cyan-500/30",
     skills: [
       "Python",
-      "Java",
-      "C",
-      "C++",
       "JavaScript",
       "TypeScript",
       "SQL",
