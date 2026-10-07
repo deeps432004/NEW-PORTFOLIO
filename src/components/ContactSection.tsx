@@ -128,7 +128,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <span className="text-[10px] text-zinc-500 block">LOCATION</span>
-                    <span>Bengaluru, India • Remote / Global</span>
+                    <span>Hubli, India • Remote / Global</span>
                   </div>
                 </div>
               </div>
